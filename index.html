@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Hub</title>
+
+<style>
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== THEME VARIABLES ===== */
+:root {
+  --bg-main: radial-gradient(circle at top left, #1e3c72, #0f2027);
+  --card-bg: rgba(255,255,255,0.06);
+  --text-color: #ffffff;
+  --glow: rgba(0,200,255,0.6);
+}
+
+.light {
+  --bg-main: linear-gradient(135deg, #e3f2fd, #ffffff);
+  --card-bg: rgba(0,0,0,0.05);
+  --text-color: #000000;
+  --glow: rgba(0,120,255,0.4);
+}
+
+/* ===== BODY ===== */
+body {
+  min-height: 100vh;
+  background: var(--bg-main);
+  animation: glowMove 8s infinite alternate;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes glowMove {
+  from { background-position: 0% 0%; }
+  to { background-position: 100% 100%; }
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 18px;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 40px var(--glow);
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  text-shadow: 0 0 10px var(--glow);
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background: rgba(0,200,255,0.25);
+  color: var(--text-color);
+  box-shadow: 0 0 12px var(--glow);
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background: rgba(0,200,255,0.45);
+}
+
+/* ===== SECTION ===== */
+.section {
+  padding: 20px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: var(--card-bg);
+  box-shadow: 0 0 18px var(--glow);
+}
+
+/* ===== FLEX ===== */
+.flex-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <h1>🌍 Community Hub</h1>
+    <button class="btn" onclick="toggleTheme()">Change Theme</button>
+  </header>
+
+  <!-- MISSION -->
+  <div class="section">
+    <h2>🏠 Mission</h2>
+    <p>Building open-source projects with inclusivity and technical excellence.</p>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <h2>🔧 Projects</h2>
+    <p>Explore and contribute to open-source initiatives.</p>
+  </div>
+
+  <!-- COMMUNITY LINKS -->
+  <div class="section">
+    <h2>💬 Community</h2>
+    <div class="flex-row">
+      <a class="btn" href="https://discord.gg/m3WktNExTh" target="_blank">Join Discord</a>
+      <a class="btn" href="https://github.com/prajasus2308" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+   <!-- CONTACT -->
+<div class="section">
+  <h2>📧 Contact</h2>
+  <p>You can reach me at:</p>
+  <p><strong>praj.asus2308@gmail.com</strong></p>
+</div>
+
+  
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Community Hub • Open Source • Safe & Inclusive
+  </footer>
+    <h3> all content by pratyush raj </h3>
+</div>
+
+<script>
+/* ===== THEME SWITCH ===== */
+function toggleTheme() {
+  document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
