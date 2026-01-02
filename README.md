@@ -1,29 +1,32 @@
-🌍 Community Hub
-Welcome to the Community Hub — an open-source space designed to bring learners, developers, and creators together. This project is hosted on GitHub Pages and serves as a collaborative platform for sharing resources, ideas, and projects.
+# 🌍 Community Hub
 
-✨ Vision
-🤝 Build an inclusive and welcoming environment for contributors.
+Welcome to the **Community Hub** — an open-source space designed to bring learners, developers, and creators together.  
+This project is hosted on **GitHub Pages** and serves as a collaborative platform for sharing resources, ideas, and projects.
 
-📚 Share knowledge, tutorials, and open-source projects.
+---
 
-🌐 Provide a central hub for community-driven initiatives.
+## ✨ Vision
+- 🤝 Build an inclusive and welcoming environment for contributors  
+- 📚 Share knowledge, tutorials, and open-source projects  
+- 🌐 Provide a central hub for community-driven initiatives  
+- 🚀 Encourage collaboration and growth through open contributions  
 
-🚀 Encourage collaboration and growth through open contributions.
+---
 
-📂 Project Structure
-Code
+## 📂 Project Structure
 community/
-├── index.html        # Main landing page
-├── README.md         # Project documentation
+├── index.html         # Main landing page
+├── README.md          # Project documentation
 └── assets/           # (Optional) images, CSS, JS files
-🚀 Getting Started
-Clone the repository
-bash
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+```bash
 git clone https://github.com/prajasus2308/community.git
 cd community
-Run locally
-Open index.html in your browser or use a simple server:
-
 bash
 npx serve
 🛠️ Tech Stack
