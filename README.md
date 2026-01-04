@@ -1,5 +1,6 @@
 # 🌍 Community Hub
 
+
 Welcome to the **Community Hub** — an open-source space designed to bring learners, developers, and creators together.  
 This project is hosted on **GitHub Pages** and serves as a collaborative platform for sharing resources, ideas, and projects.
 
